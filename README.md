@@ -1,2 +1,0 @@
-# APS
-Trabalho do curso
