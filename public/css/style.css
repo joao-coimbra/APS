@@ -70,7 +70,7 @@ body {
     border-bottom: solid 1px #ddd;
 } 
 
-main h1 {
+header h1 {
     text-align: center;
     text-transform: uppercase;
     text-shadow: 3px 2px #00808050;
@@ -85,12 +85,6 @@ main h1 {
 
 .frases {
     text-align: center;
-}
-
-.box-01, .box-02, .box-03 {
-
-    background-color: red;
-    z-index: -1;
 }
 
 ::-webkit-scrollbar {
