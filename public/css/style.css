@@ -11,7 +11,7 @@ body {
 
     justify-content: center;
 
-    background-color: #21212110;
+    background-color: #FFF;
 }
 
 .scroll-anchor {
@@ -63,24 +63,98 @@ body {
 
 }
 
-#section-01, #section-02 {
-    width: 100%;
+main {
+    width: 85%;
+    margin-left: 7.5%;
+}
+
+nav {
+
+    position: fixed;
+    left: 0;
+
+    background-color: #21212110;
+
+
+    width: 15vh;
     height: 100vh;
 
-    border-bottom: solid 1px #ddd;
-} 
+}
 
-header h1 {
+ul, li {
+    list-style-type: none;
+    padding: 0;
+}
+
+li.menu:hover {
+    background-color: #21212110;
+    cursor: pointer;
+}
+
+ul li:first-child i {
+    transition: all 300ms;
+}
+
+ul li:first-child i:hover {
+    transform: rotate(-90deg);
+
+    transition: all 300ms;
+}
+
+ul li {
+    position: relative;
+
+    width: 100%;
+    height: 5em;
+
+    margin: 0 auto;
+}
+
+li .menu, li div.item-menu {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    text-align: center;
+}
+
+li a:hover {
+    text-decoration: none;
+}
+
+li a {
+    text-decoration: none;
+    color: black;
+}
+
+.item-menu {
+    cursor: pointer ;
+}
+
+li .menu {
+    margin-top: 10%;
+}
+
+li.desabilitado{
+    background-color: #21212110;
+}
+
+a.desabilitado {
+    color: green;
+}
+
+h1.title {
     text-align: center;
     text-transform: uppercase;
     text-shadow: 3px 2px #00808050;
 
-    margin: 7.5% 0;
+    margin-top: 7%;
     color: #008000;
 }
 
 .frases {
-    margin-top: 10%;
+    margin: 7% 0;
 }
 
 .frases {
@@ -89,4 +163,24 @@ header h1 {
 
 ::-webkit-scrollbar {
     width: 0;
+}
+
+@media(max-width: 800px) {
+    nav {
+        display: none;
+    }
+
+    main {
+        margin-left: 0;
+    }
+}
+
+@media(max-width: 800px) {
+    nav {
+        display: none;
+    }
+
+    main {
+        margin-left: 0;
+    }
 }
