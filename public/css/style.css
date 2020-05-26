@@ -10,11 +10,23 @@ body {
     display: flex;
 
     justify-content: center;
-
-    background-color: #FFF;
 }
 
-.scroll-anchor {
+.background {
+    position: absolute;
+    width: 80%;
+    height: 20vw;
+
+    margin-top: 85vh;
+    margin-left: 15vh;
+    filter: blur(10em);
+
+    object-fit: cover;
+
+    z-index: -1;
+}
+
+/* .scroll-anchor {
     display: grid;
 
     position: fixed;
@@ -61,23 +73,19 @@ body {
 
     transition: all 300ms;
 
-}
-
-main {
-    width: 85%;
-    margin-left: 7.5%;
-}
+} */
 
 nav {
 
     position: fixed;
     left: 0;
 
-    background-color: #21212110;
-
+    background-color: #FFF;
 
     width: 15vh;
     height: 100vh;
+
+    z-index: 3;
 
 }
 
@@ -89,16 +97,6 @@ ul, li {
 li.menu:hover {
     background-color: #21212110;
     cursor: pointer;
-}
-
-ul li:first-child i {
-    transition: all 300ms;
-}
-
-ul li:first-child i:hover {
-    transform: rotate(-90deg);
-
-    transition: all 300ms;
 }
 
 ul li {
@@ -128,6 +126,10 @@ li a {
     color: black;
 }
 
+.menu, .item-menu {
+    width: 100%;
+}
+
 .item-menu {
     cursor: pointer ;
 }
@@ -144,13 +146,97 @@ a.desabilitado {
     color: green;
 }
 
+
+main {
+    width: 85%;
+    margin-left: 7.5%;
+}
+
+.rows {
+    margin: 7% 0;
+    justify-content: center;
+}
+
+.rows img {
+    border-radius: 3%;
+    box-shadow: 3px 3px #FFFFFF80;
+
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+li p, .title {
+    text-transform: uppercase;
+}
+
 h1.title {
     text-align: center;
     text-transform: uppercase;
     text-shadow: 3px 2px #00808050;
 
-    margin-top: 7%;
+    margin: 5% 0;
     color: #008000;
+}
+
+.box {
+    background-color: whitesmoke;
+
+    border-radius: 5%;
+    box-shadow: 3px 3px #00000010;
+
+    margin: 2vh 5vh;
+
+    min-width: 250px;
+
+}
+
+.box > h2, .box p {
+    text-align: center;
+}
+
+.box > h2 {
+    margin: 0.5em 0;
+}
+
+.box p {
+    position: relative;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    text-align: center;
+}
+
+.boxf p {
+    margin-top: 1em;
+    margin-bottom: 5em;
+}
+
+.frases .boxf {
+    border-left: solid 2px black;
+    padding-left: 5%;
+    padding-bottom: 2%;
+    text-align: left;
+    margin: 5em;
+
+}
+
+.frases div {
+    justify-content: center;
+    align-items: center;
+}
+
+.frases p {
+    position: relative;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.frases h3 {
+    margin: 2% 0;
 }
 
 .frases {
@@ -161,8 +247,50 @@ h1.title {
     text-align: center;
 }
 
+.boxf a {
+    color: green;
+    text-align: center;
+    padding: 6px;
+    margin-top: -5%;
+    position: absolute;
+    width: 200px;
+    height: 40px;
+    border: solid 1px greenyellow;
+    border-radius: 2em;
+    background-color: white;
+    text-decoration: none;
+
+    transition: color 300ms;
+    transition: background-color 700ms;
+
+
+}
+
+.boxf a:hover {
+    border: #00800080;
+    background-color: #00800080;
+    color: white;
+
+    transition: color 300ms;
+    transition: background-color 700ms; 
+}
+
+footer {
+    margin-top: auto;
+    padding : 25px 0 10px;
+
+    text-align: center;
+
+    border-top: 1px solid #00000010;
+}
+
 ::-webkit-scrollbar {
-    width: 0;
+    width: 1.2%;
+    background-color: #21212110;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #21212130;
 }
 
 @media(max-width: 800px) {
@@ -173,14 +301,24 @@ h1.title {
     main {
         margin-left: 0;
     }
-}
 
-@media(max-width: 800px) {
-    nav {
-        display: none;
+    .background {
+        bottom: -70%;
+        left: 0;
+        filter: blur(7em);
     }
 
-    main {
-        margin-left: 0;
+    .frases .boxf {
+        border-left: none;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin: 5% 0;
+    }
+
+    .boxf a {
+        margin: 0;
+        position: relative;
+        padding: 0.3em 2em;
     }
 }

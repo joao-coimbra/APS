@@ -55,6 +55,17 @@ function alterarEstiloMenu(num) {
 			}
 			break;
 
+		case 5:
+			el = document.getElementById("linkNos");
+
+			if (el.style.color == "green") {
+				el.style.color = "black";
+			}
+			else {
+				el.style.color = "green";
+			}
+			break;
+
 		default:
 			break;
 	}
