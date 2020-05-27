@@ -188,7 +188,7 @@ h1.title {
 
     margin: 2vh 5vh;
 
-    min-width: 250px;
+    min-width: 200px;
 
 }
 
@@ -262,8 +262,6 @@ h1.title {
 
     transition: color 300ms;
     transition: background-color 700ms;
-
-
 }
 
 .boxf a:hover {
@@ -282,6 +280,19 @@ footer {
     text-align: center;
 
     border-top: 1px solid #00000010;
+}
+
+body > a {
+    display: none;
+    position: absolute;
+    text-decoration: none;
+    color: black;
+    top: 3.5%;
+    left: 47.5%;
+}
+
+body > a:hover {
+    color: black;
 }
 
 ::-webkit-scrollbar {
@@ -303,9 +314,7 @@ footer {
     }
 
     .background {
-        bottom: -70%;
-        left: 0;
-        filter: blur(7em);
+        display: none;
     }
 
     .frases .boxf {
@@ -320,5 +329,14 @@ footer {
         margin: 0;
         position: relative;
         padding: 0.3em 2em;
+    }
+
+    main {
+        margin-top: 10%;
+        padding: 0;
+    }
+
+    body > a {
+        display: block;
     }
 }
