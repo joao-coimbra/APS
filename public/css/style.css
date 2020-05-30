@@ -12,6 +12,8 @@ body {
     justify-content: center;
 }
 
+
+/* Background blur page home */
 .background {
     position: absolute;
     width: 80%;
@@ -26,6 +28,7 @@ body {
     z-index: -1;
 }
 
+/* Gotinha */
 /* .scroll-anchor {
     display: grid;
 
@@ -75,6 +78,7 @@ body {
 
 } */
 
+/* Menu lateral */
 nav {
 
     position: fixed;
@@ -146,7 +150,7 @@ a.desabilitado {
     color: green;
 }
 
-
+/* página */
 main {
     width: 85%;
     margin-left: 7.5%;
@@ -155,6 +159,18 @@ main {
 main > div:nth-child(2) {
     text-align: center;
 }
+
+main > p {
+    text-align: center;
+}
+
+main > p span {
+    font-size: 32px;
+    margin-right: 0.2em;
+    color: orange;
+}
+
+/* conteúdo */
 
 .rows {
     margin: 7% 0;
@@ -169,17 +185,6 @@ main > div:nth-child(2) {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-}
-
-.image-ods {
-    justify-content: center;
-}
-
-.image-ods img {
-    width: 60%;
-    height: auto;
-
-    object-fit: cover;
 }
 
 li p, .title {
@@ -201,7 +206,7 @@ h1.title-home {
     text-transform: uppercase;
     text-shadow: 3px 2px #00808050;
 
-    margin: 5% 0;
+    margin: 3% 0;
     color: #008000;
 }
 
@@ -228,12 +233,6 @@ h1.title-agua {
 
 .box-links {
     padding: 10%;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-}
-
-.videos {
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -299,25 +298,6 @@ h1.title-agua {
     margin-bottom: 10%;
 }
 
-.nos img {
-    width: 100%;
-    height: 20em;
-
-    background-color: black;
-
-    opacity: 0.3;
-
-    object-fit: cover;
-
-    transition: all 750ms;
-}
-
-.nos img:hover {
-    opacity: 1;
-
-    transition: all 750ms;
-}
-
 .box-educa div {
     justify-content: center;
     align-items: center;
@@ -381,15 +361,6 @@ h1.title-agua {
     transition: background-color 700ms; 
 }
 
-footer {
-    margin-top: auto;
-    padding : 25px 0 10px;
-
-    text-align: center;
-
-    border-top: 1px solid #00000010;
-}
-
 body > a {
     display: none;
     position: absolute;
@@ -403,6 +374,97 @@ body > a:hover {
     color: black;
 }
 
+section {
+    margin-bottom: 10%;
+}
+
+.box-obj {
+    margin: 5% -2%;
+}
+
+.box-obj > div:nth-child(2),.box-imp > div:nth-child(3) {
+    padding: 2%;
+    background-color: #3c8f3c;
+    color: white;
+}
+
+.box-obj > div:nth-child(2) {
+    text-align: right;
+    border-top-left-radius: 1em;
+    border-bottom-left-radius: 1em;
+}
+
+.box-imp > div:nth-child(3) {
+    text-align: left;
+    border-top-right-radius: 1em;
+    border-bottom-right-radius: 1em;
+}
+
+.box-obj img, .box-obj img {
+    height: auto;
+    object-fit: cover;
+}
+
+.box-obj p {
+    margin: 3% 0;
+}
+
+.main > section {
+
+    display: block;
+    width: 100%;
+
+}
+
+/* vídeos */
+.videos {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+/* imagens */
+.image-ods {
+    justify-content: center;
+}
+
+.image-ods img {
+    width: 60%;
+    height: auto;
+
+    object-fit: cover;
+}
+
+.nos img {
+    width: 100%;
+    height: 20em;
+
+    background-color: black;
+
+    opacity: 0.3;
+
+    object-fit: cover;
+
+    transition: all 750ms;
+}
+
+.nos img:hover {
+    opacity: 1;
+
+    transition: all 750ms;
+}
+
+/* footer */
+footer {
+    margin-top: auto;
+    padding : 25px 0 10px;
+
+    text-align: center;
+
+    border-top: 1px solid #00000010;
+}
+
+/* rolagem lateral */
 ::-webkit-scrollbar {
     width: 1.2%;
     background-color: #21212110;
@@ -468,6 +530,14 @@ body > a:hover {
 
     body > a {
         display: block;
+    }
+
+    .box-obj > div:nth-child(2),.box-imp > div:nth-child(3) {
+        margin: 10% 0;
+        padding: 2%;
+        background-color: #FFF;
+        color: black;
+        text-align: center;
     }
 }
 
