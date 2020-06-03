@@ -523,9 +523,22 @@ footer {
         padding: 0.3em 2em;
     }
 
+    .boxg p {
+        width: 350px;
+    }
+
+    .box-agua img {
+        width: 100%;
+        object-fit: cover;
+    }
+
     main {
         margin-top: 10%;
         padding: 0;
+    }
+
+    .box-educa img {
+        margin-left: -10%;
     }
 
     body > a {
